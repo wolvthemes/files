@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>HTML</title>
+
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="mainCont">
+        <script>/*<![CDATA[*/ (localStorage.getItem('mode')) === 'darkmode' ? document.querySelector('#mainCont').classList.add('drK') : document.querySelector('#mainCont').classList.remove('drK') /*]]>*/</script>
+  <header>
+    <h1 class="title">Neumorphism Card</h1>
+    <label class="dm-label">
+  <div class="toggle">
+    <input class="toggle-state" type="checkbox" name="check" value="check" onclick="darkMode()" />
+    <div class="indicator"></div>
+  </div>
+</label>
+
+  </header>
+
+<div class="clear"></div>
+  <div class="neucard">
+    <div class="content">
+       <div class="img">
+        <img class="neuimg" src="https://blogger.googleusercontent.com/img/a/AVvXsEhm-s3bsLgC12szZyhj3QDTZGYAbyBuwwI-467Ov4zFrViUmnUXrT6Lq76YnjlQth71ff4JZz0APGUE087-EKuQsWXWCmakLBK3Ixm5bNsud6Z8D-DYGuF1L4w5oZ7rvepV_PA9kJA6nf_1WZT8IUk2sFyDPjwLywOlW1hwDeE_RDcbWJf3BQ1QBWzdjQ"/>
+       </div>
+      <div class="neu-ttl">
+        <h3>Neumorphism Card</h3>
+      </div>
+      <div class="neu-cont">
+        <p>This awesome neumorphism card is fully developed by me !</p>
+      </div>
+      <div class="neustcs">
+        <div class="txt">15 Posts</div>
+      </div>
+    </div>
+  </div>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
