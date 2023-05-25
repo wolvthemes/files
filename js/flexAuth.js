@@ -248,6 +248,7 @@ function removeAccount() {
 }
 
 let user_info = null;
+let flexAuth = null;
 window.onload = function() {
     firebase.auth().onAuthStateChanged((user) => {
         if (user) {
@@ -255,6 +256,7 @@ window.onload = function() {
             // https://firebase.google.com/docs/reference/js/firebase.User
             var uid = user.uid;
             user_info = user;
+            flexAuth = true;
             console.log(user);
             if (firebase.auth().currentUser.emailVerified !== true) {
                 firebase.auth().currentUser.sendEmailVerification();
